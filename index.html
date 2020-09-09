@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./app.css">
-    <title>Quiz</title>
+    <title>Calculator</title>
 </head>
 <body>
     <div class="container">
-        <div id="home" class="flex-center flex-column">
-            <h1>Quik Quiz</h1>
-            <a class="btn" href="./game.html">Play</a>
-            <a class="btn" href="./highscore.html">High Score</a>
+        <div class="flex-center flex-column">
+            <h1>Simple Calculator</h1>
+            <input id="n1" autocomplete="off" class="nums" type="text" name="num1" placeholder="Number1">
+            <input id="n2" autocomplete="off" class="nums" type="text" name="num2" placeholder="Number2">
+            <select id="opr" class="Oper" name="Operations" id="opr">
+                <option value="Default">Select</option>
+                <option value="+">Add</option>
+                <option value="-">Subtract</option>
+                <option value="*">Multiply</option>
+                <option value="/">Divide</option>
+            </select>
+
+            <button id="result" onclick= "calc()" value="Calculate" class="nums">Calculate</button>
         </div>
     </div>
+    <script src="./calculate.js"></script>
 </body>
 </html>
